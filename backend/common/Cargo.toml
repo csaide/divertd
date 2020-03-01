@@ -1,0 +1,14 @@
+[package]
+name = "common"
+version = "0.1.0"
+authors = ["Christian Saide <me@csaide.dev>"]
+edition = "2018"
+
+[dependencies]
+erased-serde = "0.3"
+serde = { version = "1.0.102", features = ["derive"] }
+slog = { version = "2.5", features = ["nested-values"]}
+slog-async = { version = "2.3", features = ["nested-values"] }
+slog_derive = { git = "https://github.com/slog-rs/derive.git" }
+slog-json = { version = "2.3", features = ["nested-values"] }
+structopt = "0.3"

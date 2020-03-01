@@ -1,0 +1,16 @@
+[package]
+name = "divertd"
+version = "0.1.0"
+authors = ["Christian Saide <me@csaide.dev>"]
+edition = "2018"
+
+[dependencies]
+common = { path = "../common" }
+
+clap = "~2.33.0"
+hyper = "0.13"
+slog = "2.5"
+structopt = "0.3"
+tokio = { version = "0.2", features = ["full"] }
+futures = "0.3"
+futures-util = "0.3.4"

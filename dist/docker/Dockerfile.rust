@@ -1,0 +1,20 @@
+# (c) Copyright 2020 Christian Saide <supernomad>
+# SPDX-License-Identifier: GPL-3.0-only
+
+ARG APP=""
+
+###
+# Divertd image
+###
+FROM scratch AS divertd
+
+ARG BUILD="debug"
+COPY ./target/x86_64-unknown-linux-musl/${BUILD}/divertd /bin/divertd
+
+ENTRYPOINT [ "/bin/divertd" ]
+CMD [ "--help" ]
+
+###
+# Output image
+###
+FROM ${APP} as final

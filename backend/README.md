@@ -1,5 +1,5 @@
-# divertd
-Rust based redirect and URL shortening service.
+# backend
+The backend rust implementations of divertd and friends
 
 ---
 &copy; Copyright 2020 Christian Saide <supernomad>
